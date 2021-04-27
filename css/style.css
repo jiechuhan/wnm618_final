@@ -148,7 +148,9 @@ nav i {
 .modal-back {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
+.menu.active .modal-back {
+  pointer-events: initial;
+}
 .modal-drawer {
   position: absolute;
   transition: all 0.3s;
