@@ -62,9 +62,13 @@ nav ul, nav i {
 	font-weight: bold;
 }
 
-.navbarIcon {
+nav.navbar {
 	display: none;
 }
+
+/*.navbarIcon {
+	display: none;
+}*/
 
 .header {
 	/*background-image: url("../img/mid.jpeg");
@@ -99,10 +103,27 @@ nav ul, nav i {
 }
 
 
-
-.modal-content {
-	background-color: var(--color-yellow);
+.navbar-light .navbar-toggler {
+    color: var(--color-yellow) !important;
+    border-color: transparent !important;
 }
+
+.navbar-toggler:focus {
+	box-shadow: none !important;
+}
+
+
+.navbar-nav {
+	text-align: right;
+	font-family: var(--font-heading);
+	font-weight: bold;
+}
+
+
+
+/*.modal-content {
+	background-color: var(--color-yellow);
+}*/
 
 /*.menu,
 .modal-back {
@@ -277,9 +298,18 @@ footer ul li {
 		display: none;
 	}
 
-	.navbarIcon {
+	nav.navbar {
 		display: block;
 	}
+
+	.fa, .fas {
+	    margin-top: 1rem;
+	}
+
+
+	/*.navbarIcon {
+		display: block;
+	}*/
 
 
 	footer {
