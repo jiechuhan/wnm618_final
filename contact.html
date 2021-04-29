@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bakery Theme</title>
 
-
+	<link rel="shortcut icon" href="img/milkToast.jpg" type="image/x-icon">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,9 +19,6 @@
 	<script src="js/script.js"></script>
 	<script src="js/maps.js"></script>
 
-	
-
-	
 
 </head>
 <body style="background-color: var(--color-light) !important;">
@@ -109,8 +106,155 @@
 
 			<div class="col-sm-6 mt-4">
 				<div class="map" id="map">
-					<!-- <img src="img/map.png" alt=""> -->
+
+					<div id="googleMap" style="width:100%;height:400px;"></div>
+
+					<script>
+						function myMap() {
+							var mapProp= {
+								center:new google.maps.LatLng(51.508742,-0.120850),
+					         	zoom: 12,
+					         	disableDefaultUI: true,
+					         	styles: paperStyles
+							};
+							
+							var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+							const marker = new google.maps.Marker({
+					          position: { 
+					          	lat: 51.508742, 
+					          	lng:-0.120850
+					          },
+					          map: map,
+					        });
+						}
+
+
+						let paperStyles = [
+						    {
+						        "featureType": "administrative",
+						        "elementType": "all",
+						        "stylers": [
+						            {
+						                "visibility": "off"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "landscape",
+						        "elementType": "all",
+						        "stylers": [
+						            {
+						                "visibility": "simplified"
+						            },
+						            {
+						                "hue": "#0066ff"
+						            },
+						            {
+						                "saturation": 74
+						            },
+						            {
+						                "lightness": 100
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "poi",
+						        "elementType": "all",
+						        "stylers": [
+						            {
+						                "visibility": "simplified"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "road",
+						        "elementType": "all",
+						        "stylers": [
+						            {
+						                "visibility": "simplified"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "road.highway",
+						        "elementType": "all",
+						        "stylers": [
+						            {
+						                "visibility": "off"
+						            },
+						            {
+						                "weight": 0.6
+						            },
+						            {
+						                "saturation": -85
+						            },
+						            {
+						                "lightness": 61
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "road.highway",
+						        "elementType": "geometry",
+						        "stylers": [
+						            {
+						                "visibility": "on"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "road.arterial",
+						        "elementType": "all",
+						        "stylers": [
+						            {
+						                "visibility": "off"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "road.local",
+						        "elementType": "all",
+						        "stylers": [
+						            {
+						                "visibility": "on"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "transit",
+						        "elementType": "all",
+						        "stylers": [
+						            {
+						                "visibility": "simplified"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "water",
+						        "elementType": "all",
+						        "stylers": [
+						            {
+						                "visibility": "simplified"
+						            },
+						            {
+						                "color": "#5f94ff"
+						            },
+						            {
+						                "lightness": 26
+						            },
+						            {
+						                "gamma": 5.86
+						            }
+						        ]
+						    }
+						]
+					</script>
+
+					<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYE9Fqg83eLXcEZJF7KmC40Sl6DIVvMKA&callback=myMap"></script>
 				</div>
+
+
 				<div class="info mt-4">
 					<h5>Address:</h5>
 					<p>1666 Lenox Ave, San Francisco, 94104</p>
@@ -184,16 +328,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
 	
-
-
-
-
-
-
-
-
-
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYE9Fqg83eLXcEZJF7KmC40Sl6DIVvMKA&libraries=&v=weekly" async></script>
 
 
 
