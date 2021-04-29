@@ -5,20 +5,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bakery Theme</title>
 
-
-	<link rel="stylesheet" href="css/style.css">
+	<!-- CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- FONTS -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 
-	
+	<!-- ICONS -->
 	<script src="https://kit.fontawesome.com/b94e5be0e6.js" crossorigin="anonymous"></script>
 
+	<!-- JS -->
 	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 	<script src="js/script.js"></script>
-
 </head>
+
+
 <body style="background-color: var(--color-light) !important;">
 	<header class="mt-3">
 		<div class="head">
@@ -77,35 +82,42 @@
 
 	
 
+	
+
 	<div class="home-main mx-auto">
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			</ol>
+
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
 
 			<div class="carousel-inner">
-			    <div class="carousel-item active">
-			    	<img class="d-block w-100" src="img/3.jpeg" alt="First slide">
-			    </div>
-			  	<div class="carousel-item">
-			    	<img class="d-block w-100" src="..." alt="Second slide">
-			    </div>
-			    <div class="carousel-item">
-			      <img class="d-block w-100" src="..." alt="Third slide">
-			    </div>
-			</div>
-			
-			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Previous</span>
-			</a>
-			  
-			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Next</span>
-			</a>
+		    	<div class="carousel-item active">
+					<img src="img/head.jpeg" class="d-block w-100" alt="...">
+				</div>
+		    	<div class="carousel-item">
+		    		<img src="img/venue.jpeg" class="d-block w-100" alt="...">
+		    	</div>
+		    	<div class="carousel-item">
+		    		<img src="img/mid.jpeg" class="d-block w-100" alt="...">
+		    	</div>
+	  		</div>
+
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+	    		<span class="carousel-control-prev-icon" aria-hidden="true">
+	    			<i class="fas fa-chevron-circle-left"></i>
+	    		</span>
+	    		<span class="visually-hidden">Previous</span>
+	  		</button>
+	  		
+	  		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true">
+			    	<i class="fas fa-chevron-circle-right"></i>
+			    </span>
+			    <span class="visually-hidden">Next</span>
+			</button>
 		</div>
 
 
@@ -158,7 +170,7 @@
 					</nav>
 				</div>
 
-				<div class="container d-flex flex-wrap justify-content-between">
+				<div class="show-bakery d-flex flex-wrap justify-content-between">
 					<div class="card mx-auto mt-3">
 						<img class="card-img-top" src="img/premiumMilkBread.jpg" alt="Card image top">
 						<div class="card-img-overlay d-flex justify-content-between">
@@ -177,10 +189,100 @@
 						    <p class="card-text">Red Bean Bread</p>
 						</div>
 					</div>
+					<div class="card mx-auto mt-3">
+						<img class="card-img-top" src="img/redBeanBread.jpg" alt="Card image top">
+						<div class="card-img-overlay d-flex justify-content-between">
+						    <p class="card-text">Red Bean Bread</p>
+						</div>
+					</div>
+					<div class="card mx-auto mt-3">
+						<img class="card-img-top" src="img/redBeanBread.jpg" alt="Card image top">
+						<div class="card-img-overlay d-flex justify-content-between">
+						    <p class="card-text">Red Bean Bread</p>
+						</div>
+					</div>
+					<div class="card mx-auto mt-3">
+						<img class="card-img-top" src="img/redBeanBread.jpg" alt="Card image top">
+						<div class="card-img-overlay d-flex justify-content-between">
+						    <p class="card-text">Red Bean Bread</p>
+						</div>
+					</div>
 				</div>
+
+
+
+				<div class="slide-wrapper d-flex">
+
+					<div class="mid-prev">
+						<span>
+							<i class="fas fa-chevron-circle-left"></i>
+						</span>
+					</div>
+
+					 <!-- d-flex flex-wrap justify-content-between -->
+
+					
+
+
+						<div class="slide">
+
+							<img class="card-img-top thumbnail" src="img/premiumMilkBread.jpg" alt="Card image top">
+
+							<img class="card-img-top thumbnail" src="img/raisinMilkButterBread.jpg" alt="Card image top">
+
+							<img class="card-img-top thumbnail" src="img/saltedButterBread.jpg" alt="Card image top">
+
+							<img class="card-img-top thumbnail" src="img/spinachKaleDanish.jpg" alt="Card image top">
+
+							<img class="card-img-top thumbnail" src="img/porkSungBread.jpg" alt="Card image top">
+
+							
+							
+						</div>
+
+						<div class="mid-next">
+						<span>
+							<i class="fas fa-chevron-circle-right"></i>
+						</span>
+					</div>
+
+				</div>
+
+					
 			</div>
 		</div>
 	</div>
+
+
+
+
+
+
+
+	<div class="thumbnail" style="border: 10px solid red; position: relative;">
+		<img class="card-img-top" src="img/saltedButterBread.jpg" alt="Card image top" style="width: 100%;
+    object-fit: cover;
+    height: 100%;">
+		<p style="position: absolute; left: 13px; bottom: 5px; font-family: var(--font-text); color: var(--color-light); font-size: 1.5em; font-weight: 600; margin: 0;">123</p>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 
 	<div class="home-main mx-auto">
@@ -325,6 +427,8 @@
     </div>
   </div>
 </div> -->
+
+
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 

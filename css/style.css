@@ -225,6 +225,30 @@ nav.navbar {
 	margin-top: 2vh;
 }
 
+/* CAROUSEL */
+.carousel.slide {
+	padding: 1em;
+}
+
+.carousel-inner {
+	max-height: 50vh !important;
+}
+
+#carouselExampleIndicators .carousel-control-prev-icon,
+#carouselExampleIndicators .carousel-control-next-icon {
+	 background-image: none;
+}
+
+#carouselExampleIndicators i.fas.fa-chevron-circle-left,
+#carouselExampleIndicators i.fas.fa-chevron-circle-right{
+	color: var(--color-yellow);
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+
+
+
 
 
 
@@ -347,9 +371,34 @@ form .btn-primary:active {
    	text-shadow: 7px 7px 5px rgba(214, 207, 211, 0.75);
 }
 
+.show-bakery {
+	padding: 0 2em;
+}
+
+.home-mid i.fas.fa-chevron-circle-left,
+.home-mid i.fas.fa-chevron-circle-right {
+	font-size: 2em;
+	color: var(--color-light);
+}
+
+.mid-prev span,
+.mid-next span {
+	line-height: 40vh;
+    vertical-align: middle;
+}
+
+.mid-prev span i.fas.fa-chevron-circle-left,
+.mid-next span i.fas.fa-chevron-circle-right {
+	cursor: pointer;
+}
+
 .home-news h1 {
 	text-indent: 0em;
 	text-align: center !important;
+}
+
+.home-founding {
+	overflow: scroll;
 }
 
 .founding-story p {
@@ -436,9 +485,46 @@ form .btn-primary:active {
 	text-align: right;
 }
 
-.home-founding {
-	overflow: scroll;
+
+.show-bakery {
+	display: none !important;
 }
+
+
+
+.thumbnail {
+	object-fit: cover;
+    max-width: 15rem;
+    height: 15rem;
+    cursor: pointer;
+    border: 30px solid var(--color-light);
+    margin: 0 20px;
+    border-radius: 0;
+}
+
+.slide-wrapper {
+	max-width: 90%;
+	min-height: 100px;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.slide {
+	width: 100%;
+	flex-wrap: nowrap;
+	overflow: hidden;
+	display: flex;
+	margin: 0 1%;
+}
+
+
+
+
+
+
+
+
+
 
 .home-news {
 	height: 70vh;
@@ -624,9 +710,6 @@ footer ul li {
 }*/
 
 @media (max-width: 993px) {
-	.layer {
-		height: initial;
-	}
 
 	.home-founding,
 	.home-news {
@@ -657,6 +740,14 @@ footer ul li {
 	    margin-top: 1rem;
 	}
 
+	.carousel-inner {
+	max-height: 17vh !important;
+}
+
+	.row.mt-5.home-founding {
+		margin-top: 1rem!important;
+	}
+
 
 	/*.navbarIcon {
 		display: block;
@@ -679,6 +770,23 @@ footer ul li {
 
 	.venue {
 		margin-top: 2rem;
+	}
+
+	.layer {
+		height: initial;
+	}
+
+	.show-bakery {
+		display: flex !important;
+	}
+
+	.slide-wrapper {
+		display: none !important;
+	}
+
+	.mid-prev span,
+	.mid-next span {
+		display: none;
 	}
 
 	.about {

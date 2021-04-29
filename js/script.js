@@ -19,5 +19,19 @@ $(() => {
 			$(target).removeClass("active");
 		})
 
+		$(".slide").scrollLeft(300);
+
+
+		$(".mid-prev").click(function() {
+			event.preventDefault();
+    		$('.slide').animate({scrollLeft:'-=300'},500);
+  		});
+
+
+		$(".mid-next").click(function() {
+			event.preventDefault();
+    		$('.slide').animate({scrollLeft:'+=300'},500);
+		});
+
 
 });
