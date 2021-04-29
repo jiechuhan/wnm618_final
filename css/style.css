@@ -512,7 +512,7 @@ form .btn-primary:active {
 .slide {
 	width: 100%;
 	flex-wrap: nowrap;
-	overflow: hidden;
+	overflow: scroll;
 	display: flex;
 	margin: 0 1%;
 }

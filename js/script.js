@@ -19,7 +19,7 @@ $(() => {
 			$(target).removeClass("active");
 		})
 
-		$(".slide").scrollLeft(300);
+		// $(".slide").scrollLeft(300);
 
 
 		$(".mid-prev").click(function() {
